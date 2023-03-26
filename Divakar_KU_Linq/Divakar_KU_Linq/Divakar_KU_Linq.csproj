@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{163D22A9-6D1E-4375-B4E7-2A8346CBBE27}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Divakar_KU_Linq</RootNamespace>
+    <AssemblyName>Divakar_KU_Linq</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aggregate_function_in_LINQ_5.cs" />
+    <Compile Include="AsEnumerable_and_AsQueryable_in_LINQ_17.cs" />
+    <Compile Include="Cast_and_OfType_Operators_in_LINQ_16.cs" />
+    <Compile Include="Concat_Operators_in_LINQ_29.cs" />
+    <Compile Include="Conversion_Operators_in_LINQ_15.cs" />
+    <Compile Include="Cross_Join_in_LINQ_25.cs" />
+    <Compile Include="Difference_between_group_join_and_inner_join_in_linq_23.cs" />
+    <Compile Include="Difference_between_Select_and_SelectMany_in_LINQ_9.cs" />
+    <Compile Include="Element_Operators_in_LINQ_20.cs" />
+    <Compile Include="EntryofExecution.cs" />
+    <Compile Include="Extension_Methods_in_CSharp_3.cs" />
+    <Compile Include="Generation_Operators_in_LINQ_28.cs" />
+    <Compile Include="GroupBy_in_LINQ_18.cs" />
+    <Compile Include="Group_by_multiple_keys_in_linq_19.cs" />
+    <Compile Include="Group_Join_in_LINQ_21.cs" />
+    <Compile Include="Implement_paging_using_skip_and_take_operators_13.cs" />
+    <Compile Include="Inner_Join_in_LINQ_22.cs" />
+    <Compile Include="Left_Outer_Join_in_LINQ_24.cs" />
+    <Compile Include="LinqPad_Tutorial_32.cs" />
+    <Compile Include="LINQ_Aggregate_Functions_4.cs" />
+    <Compile Include="LINQ_query_deferred_execution_14.cs" />
+    <Compile Include="Ordering_Operators_in_LINQ_II_11.cs" />
+    <Compile Include="Ordering_Operators_in_LINQ_I_10.cs" />
+    <Compile Include="Partitioning_Operators_in_LINQ_12.cs" />
+    <Compile Include="Projection_Operators_in_LINQ_7.cs" />
+    <Compile Include="Quantifiers_in_LINQ_31.cs" />
+    <Compile Include="Restriction_Operators_in_LINQ_6.cs" />
+    <Compile Include="SelectMany_Operators_in_LINQ_8.cs" />
+    <Compile Include="SequenceEqual_Operators_in_LINQ_30.cs" />
+    <Compile Include="Set_Operators_in_LINQ_26.cs" />
+    <Compile Include="Union_Intersect_and_Except_operators_in_LINQ_27.cs" />
+    <Compile Include="What_is_LINQ_1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Writing_LINQ_Queries_2.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
